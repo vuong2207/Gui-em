@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="="en">
+<head>
+  <meta charset="UTF-8">
+  <title>gửi em</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="welcome-screen">
+    <button id="open-btn">💌 Bấm để mở thư 💌</button>
+  </div>
+
+  <div class="card fade-in hidden" id="card">
+    <h1>Vinh 1/6/2025</h1>
+    <p>Hehe cảm ơn em vì đã đến bên anh nhé ạ, khoảng thời gian vừa qua cũng kh quá dài mà cũng kh quá ngắn nhưng cũng đủ để anh với em hiểu nhau, hì anh cảm ơn em vì đã luôn bên anh những lúc anh kh oki và những lúc anh mệt mỏi và động viên anh nhiều nhé ạ.</p>
+    <p>Đôi lúc anh có vô tình làm em buồn, kh thoải mái và còn kh hiểu nhau vì nhiều cái nữa. Anh thực sự xin lỗi em nhiều và em tha thứ cho anh để anh sửa nhé ạ.</p>
+
+    <p>Hihi cảm ơn em vì đã yêu và thương anh ạ, chắc anh kh diễn tả được bằng lời nữa. Anh yêu em nhiều lắm ạ, cảm ơn emmm !!!!!</p>
+    <p class="signature">With Love,<br>Bi béll</p>
+    <div class="heart"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Heart_coraz%C3%B3n.svg"></div>
+  </div>
+
+  <audio id="bgm" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_b9270b2a05.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    document.getElementById('open-btn').addEventListener('click', () => {
+      document.getElementById('welcome-screen').classList.add('hidden')
+      const c = document.getElementById('card')
+      c.classList.remove('hidden')
+      document.getElementById('bgm').play()
+    })
+  </script>
+</body>
+</html>
